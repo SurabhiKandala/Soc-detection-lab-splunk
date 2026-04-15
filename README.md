@@ -65,7 +65,7 @@ index=main EventCode=4688
 | stats count by New_Process_Name, Account_Name
 ```
 
-```
+---
 🚨 Alerting
 
 Created scheduled alerts in Splunk
