@@ -49,16 +49,23 @@ Instead of treating events individually, detection was based on behavioral seque
 
 ### 🔹 Failed + Successful Login Correlation
 
+
 ```spl
 index=main (EventCode=4625 OR EventCode=4624)
 | eval failed=if(EventCode=4625,1,0)
 | eval success=if(EventCode=4624,1,0)
 | stats sum(failed) as failed_attempts sum(success) as success_logins by Account_Name
 | where failed_attempts > 5 AND success_logins > 0
-🔹 Suspicious Process Execution
+
+### 🔹 Suspicious Process Execution
+
+```spl
 index=main EventCode=4688
 | search New_Process_Name="*cmd.exe*" OR New_Process_Name="*powershell.exe*"
 | stats count by New_Process_Name, Account_Name
+```
+
+```
 🚨 Alerting
 
 Created scheduled alerts in Splunk
