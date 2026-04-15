@@ -66,60 +66,85 @@ index=main EventCode=4688
 ```
 
 ---
-🚨 Alerting
+## 🚨 Alerting
 
 Created scheduled alerts in Splunk
 
-Trigger condition: Number of results > 0
-Frequency: every 15 minutes
-Alerts detect:
-Suspicious command execution
-Post-compromise activity
-📈 Dashboards
+- **Trigger condition:** Number of results > 0  
+- **Frequency:** every 15 minutes  
+
+### Alerts detect:
+- Suspicious command execution  
+- Post-compromise activity  
+
+---
+
+## 📈 Dashboards
 
 Built dashboards to visualize:
 
-Failed login trends
-Targeted accounts
-Process activity
-Attack frequency over time
-🎯 Key Insight
+- Failed login trends  
+- Targeted accounts  
+- Process activity  
+- Attack frequency over time  
+
+---
+
+## 🎯 Key Insight
 
 The attack was not obvious in failed logins.
 
 It became clear only after:
 
-A successful login
-Followed by command execution
+- A successful login  
+- Followed by command execution  
 
 This shifted detection from:
 
-Event-based monitoring
-To behavioral analysis
-🧪 Validation
-Simulated full attack lifecycle
-Verified detection logic end-to-end
-Confirmed alert triggering
-🧩 MITRE ATT&CK Mapping
-T1110 — Brute Force (Credential Access)
-📸 Screenshots
+- Event-based monitoring  
+- To behavioral analysis  
+
+---
+
+## 🧪 Validation
+
+- Simulated full attack lifecycle  
+- Verified detection logic end-to-end  
+- Confirmed alert triggering  
+
+---
+
+## 🧩 MITRE ATT&CK Mapping
+
+- T1110 — Brute Force (Credential Access)
+
+---
+
+## 📸 Screenshots
 
 Screenshots will be added for:
 
-Lab architecture
-Detection queries
-Brute-force correlation
-Suspicious process execution
-Alert trigger history
-🚀 Skills Demonstrated
-SIEM (Splunk)
-Log analysis
-Threat detection
-Event correlation
-Blue team fundamentals
-MITRE ATT&CK mapping
-🔚 Conclusion
+- Lab architecture  
+- Detection queries  
+- Brute-force correlation  
+- Suspicious process execution  
+- Alert trigger history  
+
+---
+
+## 🚀 Skills Demonstrated
+
+- SIEM (Splunk)  
+- Log analysis  
+- Threat detection  
+- Event correlation  
+- Blue team fundamentals  
+- MITRE ATT&CK mapping  
+
+---
+
+## 🔚 Conclusion
 
 This project demonstrates how real SOC detection goes beyond isolated logs and focuses on behavior patterns.
 
-Attackers operate in sequences — and detection must do the same.
+> Attackers operate in sequences — and detection must do the same.
