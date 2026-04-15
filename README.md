@@ -60,13 +60,12 @@ index=main EventCode=4688
 | search New_Process_Name="*cmd.exe*" OR New_Process_Name="*powershell.exe*"
 | stats count by New_Process_Name, Account_Name
 🚨 Alerting
+
 Created scheduled alerts in Splunk
-Trigger condition:
-Number of results > 0
+
+Trigger condition: Number of results > 0
 Frequency: every 15 minutes
-
 Alerts detect:
-
 Suspicious command execution
 Post-compromise activity
 📈 Dashboards
